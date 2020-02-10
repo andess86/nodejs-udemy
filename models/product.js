@@ -35,7 +35,7 @@ module.exports = class Product {
           console.log(err);
         });
       } else {
-        this.id = Math.random().toString;
+        this.id = Math.random().toString();
         products.push(this);
         fs.writeFile(p, JSON.stringify(products), err => {
           console.log(err);
